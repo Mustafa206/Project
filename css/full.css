@@ -3,6 +3,29 @@
     width: extend-to-zoom;
     }*/
 
+.btn {
+
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 40px 7px 40px;
+  border: dotted #000000 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
     .scoreboard {
         height: 100px;
         text-align: left;
@@ -16,10 +39,11 @@
 
     }
     
-    .scoreboard > .player2 {
+  /*  .scoreboard > .player2 {
         background: #323031;
-        padding:10px;
-    }
+        padding:20px;
+        overflow: hidden;
+    }*/
     
     .scoreboard > .player1 > span {
         display: block;
@@ -32,7 +56,7 @@
         font-size: 18px
     }
 
-    .scoreboard > .player > span {
+    .scoreboard > .player2 > span {
         display: block;
         float: left;
         width: 10%;
@@ -44,32 +68,8 @@
     }
 
     .scoreboard > .player2 > .points {
-        text-align: right;
+        text-align: center;
     }
-    
-    /*    .scoreboard > .player > .name1 {
-            width: 40%;
-            text-align: left;
-            font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
-            font-size: 24px;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: 500;
-            line-height: 26.3999996185303px;
-
-            }*/
-/*        .scoreboard > .player2 > span {
-            width: 40%;
-            text-align: left;
-            font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
-            font-size: 24px;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: 500;
-            line-height: 26.3999996185303px;
-
-            }     */
-
 
 
     h1 {
@@ -84,14 +84,6 @@
         text-shadow: 0 1px 1px #fff;
     }
 
-/*h2 {
-    font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 500;
-    line-height: 26.3999996185303px;
-    }*/
 
     body {
         margin-top: 150px; 
@@ -138,7 +130,5 @@
     }
 
 
-
-
-
+body, a:hover {cursor: url(http://ani.cursors-4u.net/movie/mov-2/mov135.cur), progress !important;} 
 
