@@ -1,2 +1,2 @@
 # Project
-Game
+My Game
