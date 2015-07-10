@@ -1,0 +1,144 @@
+/*@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+    }*/
+
+    .scoreboard {
+        height: 100px;
+        text-align: left;
+    }
+
+    .scoreboard > .player1 {
+        padding: 10px;
+        overflow: hidden;
+        background: white
+
+
+    }
+    
+    .scoreboard > .player2 {
+        background: #323031;
+        padding:10px;
+    }
+    
+    .scoreboard > .player1 > span {
+        display: block;
+        float: left;
+        width: 10%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 10px;
+        font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+        font-size: 18px
+    }
+
+    .scoreboard > .player > span {
+        display: block;
+        float: left;
+        width: 10%;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 10px;
+        font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+        font-size: 18px
+    }
+
+    .scoreboard > .player2 > .points {
+        text-align: right;
+    }
+    
+    /*    .scoreboard > .player > .name1 {
+            width: 40%;
+            text-align: left;
+            font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+            font-size: 24px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.3999996185303px;
+
+            }*/
+/*        .scoreboard > .player2 > span {
+            width: 40%;
+            text-align: left;
+            font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+            font-size: 24px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            line-height: 26.3999996185303px;
+
+            }     */
+
+
+
+    h1 {
+        color: #d54d7b;
+        font-family: "Great Vibes", cursive;
+        font-size: 100px; 
+        line-height: 125px;
+        font-weight: normal;
+        margin-bottom: 0px; 
+        margin-top: 25px;
+        text-align: center; 
+        text-shadow: 0 1px 1px #fff;
+    }
+
+/*h2 {
+    font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.3999996185303px;
+    }*/
+
+    body {
+        margin-top: 150px; 
+    /*margin: 0 auto;
+    width: 960px;*/
+    background: url('../images/background.jpg') no-repeat center center fixed;
+}
+
+/*
+.full {
+
+    }*/
+    .container {
+        background-color: transparent;
+    }
+
+    .memory_board .card {
+        /*float:left;*/
+        position: relative;
+        width: 275px;
+        height: 275px;
+        display: inline-block;
+        border: 10px solid black;
+        /*padding-bottom : 30%; */
+        /*margin:4.66%;*/
+        /* background-color:#1E1E1E;*/
+        background-color: transparent;
+        /*overflow:hidden;*/
+    }
+
+
+    .front img, .back img {
+        /*max-width: 100%;*/
+        width: 225px;
+    }
+
+
+
+
+    .bg{
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-size:contain;
+    }
+
+
+
+
+
+
