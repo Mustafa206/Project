@@ -73,7 +73,7 @@
 
 
     h1 {
-        color: #d54d7b;
+        color: #FF1493;
         font-family: "Great Vibes", cursive;
         font-size: 100px; 
         line-height: 125px;
@@ -106,10 +106,10 @@
         width: 275px;
         height: 275px;
         display: inline-block;
-        border: 10px solid black;
+        border: 10px dotted #7FFFD4;
         /*padding-bottom : 30%; */
         /*margin:4.66%;*/
-        /* background-color:#1E1E1E;*/
+        /* background-color:#1E1E1E;*/#
         background-color: transparent;
         /*overflow:hidden;*/
     }
