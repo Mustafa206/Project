@@ -1,30 +1,8 @@
-/*@viewport{
-    zoom: 1.0;
-    width: extend-to-zoom;
-    }*/
-
-.btn {
-
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Courier New;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 5px 40px 7px 40px;
-  border: dotted #000000 2px;
-  text-decoration: none;
+@font-face {
+    font-family: "CutiePop";
+    src: url("../fonts/CutiePop.ttf");
 }
 
-.btn:hover {
-  text-decoration: none;
-}
 
     .scoreboard {
         height: 100px;
@@ -36,14 +14,16 @@
         overflow: hidden;
         background: white
 
-
     }
     
-  /*  .scoreboard > .player2 {
-        background: #323031;
-        padding:20px;
+     .scoreboard > .player2 {
+        padding: 10px;
         overflow: hidden;
-    }*/
+        background: #FF1493
+
+
+    }
+
     
     .scoreboard > .player1 > span {
         display: block;
@@ -53,7 +33,8 @@
         box-sizing: border-box;
         padding: 0 10px;
         font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
-        font-size: 18px
+        font-size: 18px 
+
     }
 
     .scoreboard > .player2 > span {
@@ -74,22 +55,23 @@
 
     h1 {
         color: #FF1493;
-        font-family: "Great Vibes", cursive;
+        /*font-family: "Great Vibes", cursive;*/
+        font-family: "CutiePop";
         font-size: 100px; 
         line-height: 125px;
         font-weight: normal;
         margin-bottom: 0px; 
         margin-top: 25px;
         text-align: center; 
-        text-shadow: 0 1px 1px #fff;
+        text-shadow: 0 5px 5px #fff;
     }
 
 
     body {
-        margin-top: 150px; 
+        margin-top: 0px; 
     /*margin: 0 auto;
     width: 960px;*/
-    background: url('../images/background.jpg') no-repeat center center fixed;
+    background: url('../images/background3.jpg') no-repeat center center fixed;
 }
 
 /*
@@ -106,12 +88,13 @@
         width: 275px;
         height: 275px;
         display: inline-block;
-        border: 10px dotted #7FFFD4;
+        border: 5px dotted #FF1493;
         /*padding-bottom : 30%; */
         /*margin:4.66%;*/
         /* background-color:#1E1E1E;*/#
         background-color: transparent;
         /*overflow:hidden;*/
+        
     }
 
 
@@ -131,4 +114,14 @@
 
 
 body, a:hover {cursor: url(http://ani.cursors-4u.net/movie/mov-2/mov135.cur), progress !important;} 
+.refresh { 
+    font-family: "CutiePop";
+    src: url("../fonts/CutiePop.ttf");
+}
 
+.marquee {
+    font-family: "CutiePop";
+    src: url("../fonts/CutiePop.ttf");
+    font-size: 25px; 
+
+}

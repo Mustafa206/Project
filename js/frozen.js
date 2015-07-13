@@ -16,6 +16,9 @@ $(function(){
 	var score = [0,0];
 	var playerOne = score[0];
 	var playerTwo = score[1];
+	$('.refresh').click(function() {
+    location.reload();
+	});
 
 	$(".card").on('click',function(){
 		var previousClick = $('.selected');
@@ -38,14 +41,38 @@ $(function(){
 					console.log('match found!');
 					$('.selected').removeClass('selected').fadeOut();
 					score[turn]++;
-					console.log('player one score is: ', score[0], 'player two score: ', score[1])
-					$('.player-one-score').html(score[0]);
-					$('.player-two-score').html(score[1]);
-					swal("Right Answer", "Good Job", "success");
+					if (score[0] === 5) { 
+						swal("Player 1 wins");	
+
+					} else if (score[1] === 5) { 
+						swal("Player 2 wins");
+				
+						
+
+					// 	//TODO :
+					// 	// if player1 and player 2 !== 5
+					// 	// memoryBoard = [stuff];
+					// 	// every time a player is correct memoryBoard.pop || memoryBoard.splice $('.selected')
+					// 	// once memoryBoard is empty (memoryBoard === [])
+					// 	// ** if board is empty
+					// 	// swal draw game
+
+					// } else if (score[1] !== 5 && score[0] !==5 && ) {
+					//   		console.log("draw") 			
+
+					} else {
+						console.log(score[0]);
+						console.log(score[1]);
+						console.log('player one score is: ', score[0], 'player two score: ', score[1])
+						$('.player-one-score').html(score[0]);
+						$('.player-two-score').html(score[1]);
 
 
+						swal("Right Answer", "Good Job", "success");
+
+					}	
 				} else {
-					console.log("wth man")
+					console.log("yo wth man")
 					$('.selected').removeClass('selected')
 					previousClick.flip(false);
 					currentClick.flip(false);
@@ -57,10 +84,13 @@ $(function(){
 						swal("Wrong Answer", "It is now player 2's turn", "error");
 					}
 
+			
 				}
-					 
+
 
 			},1000);
+
+		
 			// if (previousClick.find('.back img').attr('src') !== currentClick.find('.back img').attr('src')) {
 			// 	setTimeout(function() {
 			// 		if($(this).hasClass('selected')){
